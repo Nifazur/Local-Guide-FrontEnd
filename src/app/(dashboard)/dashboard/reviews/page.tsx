@@ -18,6 +18,7 @@ export default function ReviewsPage() {
   const [page, setPage] = useState(1);
 
   const isGuide = user?.role === "GUIDE";
+  console.log(user?.role)
 
   useEffect(() => {
     const fetchReviews = async () => {
